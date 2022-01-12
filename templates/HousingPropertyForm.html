@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DreamHome.lk</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!--
+Template 2036 Blue Office
+http://www.tooplate.com/view/2036-blue-office
+-->
+<link href="{{url_for('static',filename='tooplate_style1.css')}}" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="subpage">
+
+    <div id="tooplate_wrapper">
+
+        <div id="tooplate_sidebar">
+            <div id="site_title"><a href="#">Dream<span>Home.lk</span></a></div>
+            
+            <div id="home_service">
+                <div class="home_service_box"><span class="service1"></span><h5><a href="{{url_for('services')}}">Online House Valuation</a></h5>Check real property maret value</div>
+                <div class="home_service_box"><span class="service2"></span><h5><a href="{{url_for('services')}}">Find your Dream Home</a></h5>
+                All the house sale ads are here.</div>
+            </div>
+            
+            <div class="sidebar_box">
+                <h4>Best Service Providers</h4>	
+                
+                <div id="newsletter_box">
+                <form action="#" method="get">			
+                    Ready to start searching listings and hitting open houses? Save yourself some time by first identifying exactly what you need and want in a home using our checklist.<br />
+                
+                </form>
+                </div>		
+                
+                <div class="cleaner"></div>
+            </div>
+            
+              <div class="sidebar_box sbb_last">
+                <strong>DreamHome.lk</strong><br />
+                <b>Email:</b> <a href="#">dreamhome@gmail.com</a>		
+            </div>
+        </div> <!-- end of sidebar -->
+    
+    <div id="tooplate_main">
+    	
+        <div id="tooplate_menu">
+            <ul>
+                <li><a href="{{url_for('h')}}" >Home</a></li>
+                <li><a href="{{url_for('about')}}" >About Us</a></li>
+                <li><a href="{{url_for('services')}}">Services</a></li>
+                
+                <li><a href="{{url_for('contact')}}" >Contact</a></li>
+            </ul>     	
+        </div> <!-- end of tooplate_menu -->
+        
+        <div id="content_title_box">
+	        <h2>Our Services</h2>
+			<p>Now you can estimate the price of your dream house around Colombo suburbs in Sri Lanka from here. </p>
+        </div>
+
+        <div id="tooplate_content">
+
+            <div class="wrapper">
+                <div class="inner">
+                    <form method="POST" action="{{url_for('calc')}}">
+                        <h3>Estimate your Housing Property Price.</h3>
+                        <div class="form-group">
+                            <div class="form-wrapper">
+                                <label for=""><b>Floor Area (sqft):</b></label>
+                                <input type="text" class="form-control" name="Floor_area">
+                            </div>
+                            <div class="form-wrapper">
+                                <label for=""><b>Land Size (Perches):</b></label>
+                                <input type="text" class="form-control" name="Land_Size(perches)">
+                            </div>
+                        </div>
+    
+                        <div class="form-group">
+                            <div class="form-wrapper">
+                                <label for=""><b>Number of Bathrooms:</b></label>
+                                <input type="text" class="form-control" name="Num_Baths">
+                            </div>
+                            <div class="form-wrapper">
+                                <label for=""><b>Number of Bedrooms:</b></label>
+                                <input type="text" class="form-control" name="Num_Beds">
+                            </div>
+                        </div>
+    
+                        <div class="form-group">
+                            <div class="form-wrapper">
+                                <label for=""><b>Number of Stories:</b></label>
+                                <input type="text" class="form-control" name="Num_Stories">
+                            </div>
+                            <div class="form-wrapper">
+                                <label for=""><b>Minimum time to the nearest town (minutes):</b></label>
+                                <input type="text" class="form-control" name="Time_to_Town">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-wrapper">
+                                <label for=""><b>Is there a School near to the House:</b></label>
+                                <input type="radio" id="Ava_Schools_yes" name="Ava_Schools_yes" value="1">
+                                <label for="Ava_Schools_yes"> Yes</label>
+                                <input type="radio" id="Ava_Schools_yes" name="Ava_Schools_yes" value="0">
+                                <label for="Ava_Schools_yes"> No</label>
+                            </div>
+                            <div class="form-wrapper">
+                                <label for=""><b>Is there a Hospital near to the House:</b></label>
+                                <input type="radio" id="Ava_Hospitals_yes" name="Ava_Hospitals_yes" value="1">
+                                <label for="Ava_Hospitals_yes"> Yes</label>
+                                <input type="radio" id="Ava_Hospitals_yes" name="Ava_Hospitals_yes" value="0">
+                                <label for="Ava_Hospitals_yes"> No</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-wrapper">
+                                <label for=""><b>Is there a Religious Place near to the House:</b></label>
+                                <input type="radio" id="Ava_Religious_yes" name="Ava_Religious_yes" value="1">
+                                <label for="Ava_Religious_yes"> Yes</label>
+                                <input type="radio" id="Ava_Religious_yes" name="Ava_Religious_yes" value="0">
+                                <label for="Ava_Religious_yes"> No</label>
+                            </div>
+                            <div class="form-wrapper">
+                                <label for=""><b>Is there any Expensive Decorations:</b></label>
+                                <input type="radio" id="Decorations_NoDecorations" name="Decorations_NoDecorations" value="0">
+                                <label for="Decorations_NoDecorations"> Yes</label>
+                                <input type="radio" id="Decorations_NoDecorations" name="Decorations_NoDecorations" value="1">
+                                <label for="Decorations_NoDecorations"> No</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-wrapper">
+                                <label for=""><b>Is there Air Conditioning System Available:</b></label>
+                                <input type="radio" id="AC/NONAC_yes" name="AC/NONAC_yes" value="1">
+                                <label for="AC/NONAC_yes"> Yes</label>
+                                <input type="radio" id="AC/NONAC_yes" name="AC/NONAC_yes" value="0">
+                                <label for="AC/NONAC_yes"> No</label>
+                            </div>
+                           
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-wrapper">
+                                <label for=""><b>Nearest main city to the housing property:</b></label>
+                                <input type="radio" id="Location" name="Location" value="1">
+                                <label for="Location"> Mount-Lavinia</label>
+                                <input type="radio" id="Location" name="Location" value="2">
+                                <label for="Location"> Piliyandala</label>
+                                <input type="radio" id="Location" name="Location" value="3">
+                                <label for="Location"> Kottawa</label>
+                                <input type="radio" id="Location" name="Location" value="4">
+                                <label for="Location"> Athurugiriya</label>
+                                <input type="radio" id="Location" name="Location" value="5">
+                                <label for="Location"> Malabe</label>
+                                <input type="radio" id="Location" name="Location" value="6">
+                                <label for="Location"> Thalawathugoda</label>
+                                <input type="radio" id="Location" name="Location" value="7">
+                                <label for="Location"> Moratuwa</label>
+                                <input type="radio" id="Location" name="Location" value="8">
+                                <label for="Location"> Boralesgamuwa</label>
+                                <input type="radio" id="Location" name="Location" value="9">
+                                <label for="Location"> Dehiwala</label>
+                                <input type="radio" id="Location" name="Location" value="10">
+                                <label for="Location"> Kotte</label>
+                                <input type="radio" id="Location" name="Location" value="11">
+                                <label for="Location"> Nugegoda</label>
+                                
+                            </div>
+                            
+                        </div>
+    
+                        
+                        
+                        
+                        <button>CHECK NOW</button>
+                    </form>
+                </div>
+            </div>
+            
+            
+
+        </div> <!-- end of content -->
+    
+    </div> <!-- end of content -->
+	
+    <div class="cleaner"></div>    
+</div> <!-- end of wrapper -->
+
+<div id="tooplate_footer_wrapper">
+	<div id="tooplate_footer">
+
+        <a href="{{url_for('h')}}">Home</a> | <a href="{{url_for('about')}}">About Us</a> | <a href="{{url_for('services')}}">Services</a> | <a href="{{url_for('contact')}}">Contact</a> <br /><br />
+        
+        DreamHome.lk | @2022 
+		
+    </div>
+</div>
+
+</body>
+</html>

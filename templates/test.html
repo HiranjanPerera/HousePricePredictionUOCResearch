@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DreamHome.lk</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!--
+Template 2036 Blue Office
+http://www.tooplate.com/view/2036-blue-office
+-->
+<link href="{{url_for('static',filename='tooplate_style.css')}}" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="subpage">
+
+    <div id="tooplate_wrapper">
+
+        <div id="tooplate_sidebar">
+            <div id="site_title"><a href="#">Dream<span>Home.lk</span></a></div>
+            
+            <div id="home_service">
+                <div class="home_service_box"><span class="service1"></span><h5><a href="{{url_for('services')}}">Online House Valuation</a></h5>Check real property maret value</div>
+                <div class="home_service_box"><span class="service2"></span><h5><a href="{{url_for('services')}}">Find your Dream Home</a></h5>
+                All the house sale ads are here.</div>
+            </div>
+            
+            <div class="sidebar_box">
+                <h4>Best Service Providers</h4>	
+                
+                <div id="newsletter_box">
+                <form action="#" method="get">			
+                    Ready to start searching listings and hitting open houses? Save yourself some time by first identifying exactly what you need and want in a home using our checklist.<br />
+                
+                </form>
+                </div>		
+                
+                <div class="cleaner"></div>
+            </div>
+            
+              <div class="sidebar_box sbb_last">
+                <strong>DreamHome.lk</strong><br />
+                <b>Email:</b> <a href="#">dreamhome@gmail.com</a>		
+            </div>
+        </div> <!-- end of sidebar -->
+    
+    <div id="tooplate_main">
+    	
+        <div id="tooplate_menu">
+            <ul>
+                <ul>
+                    <li><a href="{{url_for('h')}}" class="current">Home</a></li>
+                    <li><a href="{{url_for('about')}}">About Us</a></li>
+                    <li><a href="{{url_for('services')}}">Services</a></li>
+                    
+                    <li><a href="{{url_for('contact')}}">Contact</a></li>
+                </ul> 
+        </div> <!-- end of tooplate_menu -->
+         
+        <div id="content_title_box">
+	        <h2>Our Services</h2>
+			<p>Now you can estimate the price of your dream house around Colombo suburbs in Sri Lanka from here. </p>
+        </div>
+
+        <div id="tooplate_content">
+            
+            <p style='color:551A8B;font-size:20px;text-align:right;'><b>The Estimated Price of the Housing Property is: </b>
+                <br><br><span style='color:8B1A1A;font-size:30px;text-align:right;'><b>Rs. {{data}} </b></span>
+                <br><br><br><br><br><br><br><br>
+                <div class="content_box cb_last">
+                    
+                    <div class="col_w300 float_l">                
+                        <h3> DreamHome.lk...</h3>
+                        <p>Main services that we are providing.</p>
+                        <ul class="tooplate_list">
+                            <li>Provide an emergency support</li>
+                        <li>Provide advices to the customers who have lack of knowledge</li>
+                        <li>Provide facilities to estimate the housing property price according the customer requirements.</li>
+                                                   
+                        </ul>
+                        <div class="cleaner"></div>
+                        <div class="btn_more"><a href="{{url_for('gallery')}}"><span>&raquo;</span> Find your Dream Home Here...</a></div>
+                    </div>
+                    
+                    <div class="col_w300 float_r">    
+                        <h3>We, DreamHome.lk Provide you the most accurate housing property prices according to your requirement.    </h3>
+                        <div class="home_newsbox">
+                            <img src="static/images/image_06.png" alt="image" class="image_wrapper image_fl" />
+                            <p>  </p>
+                            <div class="cleaner"></div>
+                        </div>                
+                              
+                    </div>                
+                    
+                    <div class="cleaner"></div>
+                </div>
+
+           
+            
+        </div> <!-- end of content -->
+    
+    </div> <!-- end of content -->
+	
+    <div class="cleaner"></div>    
+</div> <!-- end of wrapper -->
+
+<div id="tooplate_footer_wrapper">
+	<div id="tooplate_footer">
+
+        <a href="{{url_for('h')}}">Home</a> | <a href="{{url_for('about')}}">About Us</a> | <a href="{{url_for('services')}}">Services</a> | <a href="{{url_for('contact')}}">Contact</a> <br /><br />
+        
+        DreamHome.lk | @2022
+		
+    </div>
+</div>
+
+</body>
+</html>
